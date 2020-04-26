@@ -1,13 +1,12 @@
-package hello_test
+package hello
 
 import (
-	"hello"
 	"testing"
 )
 
-func TestHello(t *testing.T) {
+func TestGreeting(t *testing.T) {
 	want := "Hello Gophers!"
-	got := hello.Greeting()
+	got := Greeting()
 	if want != got {
 		t.Errorf("want %q, got %q", want, got)
 	}
